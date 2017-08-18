@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!-- Name -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/slackusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:text="Slack username"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginStart="36dp" />
+
+</RelativeLayout>
